@@ -1,15 +1,11 @@
 language: node_js
 node_js:
-  - lts/*
+- lts/*
 jobs:
   include:
-    - stage: test
-      script: npm run test
+  - stage: test
+    script: npm run test
 deploy:
   provider: heroku
   api_key:
-    secure: "ef6a0c9b-fe87-47d8-8697-5230a0be2e68"
-    app: travisaria
-    on: staging
-    run: 
-      - restart
+    secure: E9zyYG0uAupqPZRsgcPO4CmSq7Kt7+PhVa3+jenPvb/4A9M5IzlCI4m6avOQpiaQN2S9/TsmZqQ/gXlJrbpa5312fHPvuAn7Pr7YYYdpeHt3TTOyi8UXjcLbzsZmqUSUk1+LYTBZt4Rs9p5jhACAfbvRpfPRzxpC854GjVDnnl/JeVaGwrDDb7aYwTLZvsQtadAxooarYQHiUezaL6aameN0eChl9McTFuUcoPzoXsA3uwI/PjUDjU9LeFZnGSV0kswP3YIUqPH9iiMTVqFoRLXIzfcQLICDeFufyrAUmxUtqrIFHsyaU3jReD7/43NddSTlrZ2+Xx49qltHUOP6K0HYO5+MkWcYniBMuhabfwCLZwuEmrZnCI8izlu6dpMxAx36cbI/4MXzCnupq6Hihw3ZUCaoSyRRBsH5AR7n3JedfUsNXOQkQE0JGU1lQ5TpdAfjKF3WNJfcRY1HXTBs4OcWpPKwhij4U0AgItUvYg6qS7zqY9S/rjnoE/ByAjPZdR/DWDtdSb1R4SPlTHpkiAUV4RTG6TBVjjOBkcn+jxgdwTfbUf1tTtfbco/4Nfg7nEwfT2hA/YkYiMvxZ/zHmPECibc4Vqy/l+XibPiJzzcmyOVP1J4gtH5ulQ+0RkPT2LXW2PYqjoikLRvEF787talfnSXuH82voobpwftQgdg=
