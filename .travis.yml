@@ -8,7 +8,7 @@ jobs:
 deploy:
   provider: heroku
   api_key:
-    secure: "ef6a0c9b-fe87-47d8-8697-5230a0be2e68"
+    secure: d816018e-df99-4c14-b322-abc0d595c71c
     app: travisaria
     on: staging
     run: 
