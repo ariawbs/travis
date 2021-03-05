@@ -5,7 +5,3 @@ jobs:
   include:
     - stage: test
       script: npm run test
-    - stage: run
-      env:
-        - FOO=foo
-      script: npm run start
