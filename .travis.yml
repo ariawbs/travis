@@ -10,6 +10,7 @@ deploy:
   api_key:
     secure: "ef6a0c9b-fe87-47d8-8697-5230a0be2e68"
     app: travisaria
-    on: staging
+    on: 
+      all_branches: true
     run: 
       - restart
